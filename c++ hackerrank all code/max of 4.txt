@@ -1,0 +1,108 @@
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+these case fails some cases 
+/*
+Add `int max_of_four(int a, int b, int c, int d)` here.
+*/
+int max(int a,int b,int c,int d){
+int max=0;
+    if (max<a){
+        max=a;
+    }
+    if (max<b){
+        max=b;
+    }
+    if (max<c){
+        max=c;
+    }
+    else{
+        max=d;
+    }
+return max;
+}
+int main() {
+    int a, b, c, d;
+    scanf("%d %d %d %d", &a, &b, &c, &d);
+    int ans = max(a, b, c, d);
+    printf("%d", ans);
+    
+    return 0;
+}
+
+new method
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+/*
+Add `int max_of_four(int a, int b, int c, int d)` here.
+*/
+int max(int a,int b,int c,int d){
+int max=0;
+    if (a>b && a>c && a>d){
+        max=a;
+    }else if (b>c && b>d){
+        max=b;
+    }
+    else if (c>d){
+        max=c;
+    }
+    else{
+        max=d;
+    }
+    
+return max;
+}
+int main() {
+    int a, b, c, d;
+    scanf("%d %d %d %d", &a, &b, &c, &d);
+    int ans = max(a, b, c, d);
+    printf("%d", ans);
+    
+    return 0;
+}
+
+another way to solve this:
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+/*
+Add `int max_of_four(int a, int b, int c, int d)` here.
+*/
+int max(int a,int b,int c,int d){
+int max=0;
+int i=0;
+    /*if (a>b && a>c && a>d){
+        max=a;
+    }else if (b>c && b>d){
+        max=b;
+    }
+    else if (c>d){
+        max=c;
+    }
+    else{
+        max=d;
+    }*/
+    int arr[4]={a,b,c,d};
+    for (i=0;i<4;i++){
+        if (arr[i]>max){
+            max =arr[i];
+        }else{
+            continue;
+        }
+    }
+    
+return max;
+}
+int main() {
+    int a, b, c, d;
+    scanf("%d %d %d %d", &a, &b, &c, &d);
+    int ans = max(a, b, c, d);
+    printf("%d", ans);
+    
+    return 0;
+}
+

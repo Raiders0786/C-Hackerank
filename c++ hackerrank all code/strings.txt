@@ -1,0 +1,29 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+	// Complete the program
+    string a,b;
+
+    char af[0],bf[0];
+    int i;
+    cin>>a;
+    cin>>b;
+    cout<<a.size()<<" "<<b.size()<<endl;
+    cout<<a+b<<endl;
+
+    af[0]=a[0];
+    bf[0]=b[0];
+
+    //cout<<bf[0]+a+af[0]+b<<endl;
+    for(i=0;i<a.size();i++){
+        if (i==0){
+            a[i]=bf[i];
+            b[i]=af[i];
+        }
+        break;
+    }
+    cout<<a<<" "<<b;
+    return 0;
+}

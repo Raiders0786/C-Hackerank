@@ -1,0 +1,36 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+#include <math.h>
+using namespace std;
+
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    int n,i,N;
+    int j=0;
+   
+    
+    cin>>n;
+    int arr[n];
+    int revarr[n];
+    //cout<<N;
+    for(i=0 ; i<n ; i++){
+       cin>>arr[i];
+       //cout<<arr[i]<<" ";
+    }
+    N=n-1;
+    for(i=N;i>=0;i--){
+        revarr[j]=arr[i];
+        j=j+1;
+    }
+
+    for(i=0 ; i<n ; i++){
+       cout<<revarr[i]<<" ";
+    }
+
+   
+    return 0;
+}

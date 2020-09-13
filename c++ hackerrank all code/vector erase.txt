@@ -1,0 +1,28 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    int i,val,n,siz,t,a,b,j,k,ls;
+    vector<int> v;
+    cin>>siz;
+    for(i=0;i<siz;i++){
+        cin>>val;
+        v.push_back(val);
+    }
+    cin>>t;
+    v.erase(v.begin()+(t-1));
+    cin>>a>>b;
+    v.erase(v.begin()+(a-1),v.begin()+(b-1));
+    ls=v.size();
+    cout<<ls<<endl;
+    for(k=0;k<ls;k++){
+        cout<<v[k]<<" ";
+    }
+    return 0;
+}

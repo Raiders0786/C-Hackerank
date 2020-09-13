@@ -1,0 +1,48 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+
+
+int main()
+{
+    int n;
+    cin >> n;
+    
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
+    // Write Your Code Here
+    if (n==1){
+        char c[10]="one";
+        cout<<c;
+    }else if (n==2){
+        char c[10]="two";
+        cout<<c;
+    }else if (n==3){
+        char c[10]="three";
+        cout<<c;
+    }else if (n==4){
+        char c[10]="four";
+        cout<<c;
+    }else if (n==5){
+        char c[10]="five";
+        cout<<c;
+    }else if (n==6){
+        char c[10]="six";
+        cout<<c;
+    }else if (n==7){
+        char c[10]="seven";
+        cout<<c;
+    }else if (n==8){
+        char c[10]="eight";
+        cout<<c;
+    }else if (n==9){
+        char c[10]="nine";
+        cout<<c;
+    }else{
+        char c[20]="Greater than 9";
+        cout<<c;
+    }
+
+    return 0;
+}
